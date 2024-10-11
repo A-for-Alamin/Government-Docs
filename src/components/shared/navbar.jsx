@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Button } from "../common/button"
-import { Container } from "../common/container"
-import { Logo } from "./logo"
+import { Button } from "../common/button";
+import { Container } from "../common/container";
+import { Logo } from "./logo";
+import { navItems } from "../../lib/db/index";
 import { FaBars } from "react-icons/fa";
 import { FaTimes } from "react-icons/fa";
 
@@ -16,8 +17,8 @@ export const Navbar = () => {
     return (
         <nav className="px-[30x] py-5">
             <Container>
-                <div className="flex justify-between items-center px-2 sm:px-5 xl:px-[30px] py-2 sm:py-3.5 xl:py-5 bg-white rounded-full">
-                    <Logo/>
+                <div className="flex justify-between items-center px-2 sm:px-5 xl:px-[30px] py-2 sm:py-3.5 xl:py-5 bg-white rounded-full gap-2.5">
+                    <Logo>GoverningDocs</Logo>
                     
                     <ul className={`hidden md:flex items-center gap-0 md:gap-3 xl:gap-4 ${navOpen ? "openNav": ""}`}>
                         {navOpen ? <FaTimes onClick={handleNavbar} className="text-lg me-5 mb-5 self-end"/> : ""}
@@ -38,25 +39,3 @@ export const Navbar = () => {
 }
 
 
-const navItems = [
-    {
-        label: "Problem & Solution",
-        link: "#",
-    },
-    {
-        label: "Industries We Serve",
-        link: "#",
-    },
-    {
-        label: "How It Works",
-        link: "#",
-    },
-    {
-        label: "Testimonials",
-        link: "#",
-    },
-    {
-        label: "FAQs",
-        link: "#",
-    },
-]

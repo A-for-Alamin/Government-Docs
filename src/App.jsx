@@ -7,8 +7,9 @@ function App() {
 
   return (
     <>
-      <main className='bg-slate-400'>
+      <main className=''>
         <Navbar/>
+        
         <Footer/>
       </main>
     </>
