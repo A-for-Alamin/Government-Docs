@@ -19,6 +19,9 @@ export default {
         "space-grotesk": ['"Space Grotesk"' , "sans-serif"],
         "nunito-sans": ['"Nunito Sans"', "sans-serif"],
       },
+      boxShadow: {
+        card: "0px 10px 30px 0px #02b6dc26",
+      },
     },
   },
   plugins: [],
